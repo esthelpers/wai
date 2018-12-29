@@ -32,3 +32,5 @@ wai_source(){
 wai(){
     echo $CURRENT_SHELL
 }
+wai_source $esthelpers_wai/sl.bash.sh
+wai_source $esthelpers_wai/sl.zsh.sh
