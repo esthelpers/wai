@@ -21,7 +21,8 @@ wai_source(){
      for i in $@
      do
          b=$(basename $i)
-         target=${${b%.*}#*.}
+         c=${b%.*}
+         target=${c#*.}
          if [[ $target == $CURRENT_SHELL ]]
          then
              source $i
