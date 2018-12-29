@@ -24,7 +24,7 @@ wai_source(){
          target=${${i%.*}#*.}
          if [[ $target == $CURRENT_SHELL ]]
          then
-             source $target
+             source $i
          fi
      done
     
